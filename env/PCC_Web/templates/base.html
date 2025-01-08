@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static tailwind_tags %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% block title %}
+        Phillipine Countryville College Inc.
+      {% endblock %}
+    </title>
+    <link rel="stylesheet" href="" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="{% static 'img/PCC.png' %}" />
+    {% tailwind_css %}
+    {% load static %}
+  </head>
+  <style>
+    * {
+      font-family: 'Roboto', sans-serif;
+    }
+    
+    body::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .dancing {
+      font-family: 'Dancing Script', serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+    }
+  </style>
+  <body>
+    <nav>
+      <!-- Top Header -->
+      <div class="bg-[#2612d9] p-[1px]">
+        <ul class="flex items-center justify-end px-3 gap-5 text-[12px] text-[#FFFFFF]">
+          <li>
+            <a href="">
+              <svg class="w-[12px] h-[12px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="flex items-center gap-2" href="">
+              <svg class="w-[12px] h-[12px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M9 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4H7Zm8-1a1 1 0 0 1 1-1h1v-1a1 1 0 1 1 2 0v1h1a1 1 0 1 1 0 2h-1v1a1 1 0 1 1-2 0v-1h-1a1 1 0 0 1-1-1Z" clip-rule="evenodd" />
+              </svg>ADMISSION
+            </a>
+          </li>
+          <li>
+            <a class="flex items-center gap-2" href="">
+              <svg class="w-[12px] h-[12px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M12 20a7.966 7.966 0 0 1-5.002-1.756l.002.001v-.683c0-1.794 1.492-3.25 3.333-3.25h3.334c1.84 0 3.333 1.456 3.333 3.25v.683A7.966 7.966 0 0 1 12 20ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10c0 5.5-4.44 9.963-9.932 10h-.138C6.438 21.962 2 17.5 2 12Zm10-5c-1.84 0-3.333 1.455-3.333 3.25S10.159 13.5 12 13.5c1.84 0 3.333-1.455 3.333-3.25S13.841 7 12 7Z" clip-rule="evenodd" />
+              </svg>LOGIN
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="bg-[#fff708] h-[3px] w-[100%]"></div>
+
+      <!-- Mobile Sidebar Toggle -->
+      <div class="md:hidden flex items-center justify-between bg-[#0033ff] p-[10px] w-[100%]">
+        <a class="block md:hidden" href=""><img class="w-[120px]" src="{% static 'img/PCCI.png' %}" alt="" /></a>
+        <button id="menu-toggle" class="p-2 text-white">☰</button>
+      </div>
+
+      <!-- Sidebar -->
+      <div id="mobile-menu" class="fixed top-0 left-0 w-[250px] h-full bg-[#0033ff] text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+        <button id="close-menu" class="absolute top-4 right-4 text-white">✕</button>
+        <ul class="p-5 space-y-4 mt-10">
+          <li>
+            <a href="#">HOME</a>
+          </li>
+          <li>
+            <a href="#">ACADEMICS</a>
+          </li>
+          <li>
+            <a href="#">STUDENT HUB</a>
+          </li>
+          <li>
+            <a href="#">ABOUT</a>
+          </li>
+        </ul>
+        <div class="px-5">
+          <div class="bg-[#fff708] h-[3px] w-[100%]"></div>
+        </div>
+
+        <div class="md:hidden absolute top-60 md:bottom-4 items-center justify-center flex left-1/2 transform -translate-x-1/2 z-20 w-full px-4">
+          <div class="grid grid-cols-3 gap-4">
+            <!-- Card 1 -->
+            <a href="" class="bg-[#0033ff] flex px-1 py-1 w-[50px] items-center justify-center gap-4 border-2 border-[#FDD708] rounded-[150px] hover:transform hover:scale-105 transition-all relative group">
+              <div class="flex justify-end items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="rgba(255,255,255,1)">
+                  <path d="M12 22C6.47715 22 2 17.5228 2 12 2 6.47715 6.47715 2 12 2 17.5228 2 22 6.47715 22 12 22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12 20 7.58172 16.4183 4 12 4 7.58172 4 4 7.58172 4 12 4 16.4183 7.58172 20 12 20ZM13 10.5V15H14V17H10V15H11V12.5H10V10.5H13ZM13.5 8C13.5 8.82843 12.8284 9.5 12 9.5 11.1716 9.5 10.5 8.82843 10.5 8 10.5 7.17157 11.1716 6.5 12 6.5 12.8284 6.5 13.5 7.17157 13.5 8Z"></path>
+                </svg>
+              </div>
+              <span class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 hidden group-hover:block text-white bg-black p-2 rounded-md text-xs">INFO</span>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="" class="bg-[#0033ff] text-left flex px-1 py-1 w-[50px] items-center gap-4 border-2 border-[#FDD708] rounded-[50px] hover:transform hover:scale-105 transition-all relative group">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="rgba(255,255,255,1)">
+                <path d="M12 0.585693L18 6.58569V9H22V19H23V21H1V19H2V9H6V6.58569L12 0.585693ZM18 19H20V11H18V19ZM6 11H4V19H6V11ZM8 7.41412V18.9999H11V12H13V18.9999H16V7.41412L12 3.41412L8 7.41412Z"></path>
+              </svg>
+              <span class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 hidden group-hover:block text-white bg-black p-2 rounded-md text-xs">JOIN_US</span>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="" class="bg-[#0033ff] text-left flex px-1 py-1 w-[50px] items-center gap-4 border-2 border-[#FDD708] rounded-[50px] hover:transform hover:scale-105 transition-all relative group">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="rgba(255,255,255,1)">
+                <path d="M4 11.3333L0 9L12 2L24 9V17.5H22V10.1667L20 11.3333V18.0113L19.7774 18.2864C17.9457 20.5499 15.1418 22 12 22C8.85817 22 6.05429 20.5499 4.22263 18.2864L4 18.0113V11.3333ZM6 12.5V17.2917C7.46721 18.954 9.61112 20 12 20C14.3889 20 16.5328 18.954 18 17.2917V12.5L12 16L6 12.5ZM3.96927 9L12 13.6846L20.0307 9L12 4.31541L3.96927 9Z"></path>
+              </svg>
+              <span class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 hidden group-hover:block text-white bg-black p-2 rounded-md text-xs">PROGRAMS</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {% comment %}DESKTOP ICON{% endcomment %}
+
+      <div class="hidden md:block md:absolute top-1 left-[100px] z-50">
+        <a class="inline-block transition-all transform hover:-translate-y-2 hover:scale-100" href=""><img class="w-[120px] drop-shadow-white transition-all transform" src="{% static 'img/PCC.png' %}" alt="" /></a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex justify-end bg-[#0033ff] p-5">
+        <ul class="flex items-center gap-5 md:gap-5 px-0 md:px-20 text-[#FFFFFF] text-[12px] md:text-[16px]">
+          <li>
+            <a href="">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M11.293 3.293a1 1 0 0 1 1.414 0l6 6 2 2a1 1 0 0 1-1.414 1.414L19 12.414V19a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-3h-2v3a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2v-6.586l-.293.293a1 1 0 0 1-1.414-1.414l2-2 6-6Z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">ACADEMICS</a>
+          </li>
+          <li>
+            <a href="">STUDENT HUB</a>
+          </li>
+          <li>
+            <a href="">ABOUT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    {% block content %}
+
+    {% endblock %}
+
+    <footer>
+      <div class="bg-[#2612d9] p-[3px]"></div>
+      <div class="bg-[#fff708] h-[3px] w-[100%]"></div>
+      <div class="bg-[#0033ff]">
+        <div class="py-5">
+          <img class="drop-shadow-white w-40" src="{% static 'img/PCC.png' %}" alt="" />
+        </div>
+      </div>
+      <div class="bg-[#2612d9] p-[3px]">
+        <h1 class="text-center text-[#ffffff] text-[16px]">COPYWRIGHT 2025, PHILLIPINE COUNTRYVILLE COLLEGE INC.</h1>
+      </div>
+    </footer>
+
+    <script>
+      const menuToggle = document.getElementById('menu-toggle')
+      const closeMenu = document.getElementById('close-menu')
+      const mobileMenu = document.getElementById('mobile-menu')
+      
+      // Toggle Sidebar on Button Click
+      menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.remove('-translate-x-full')
+      })
+      
+      // Close Sidebar on Close Button Click
+      closeMenu.addEventListener('click', () => {
+        mobileMenu.classList.add('-translate-x-full')
+      })
+      
+      // Hide Sidebar when switching to Desktop
+      window.addEventListener('resize', () => {
+        if (window.innerWidth >= 768) {
+          mobileMenu.classList.add('-translate-x-full')
+        }
+      })
+    </script>
+  </body>
+</html>
