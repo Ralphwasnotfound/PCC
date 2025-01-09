@@ -26,7 +26,7 @@
     <div class="hidden md:block md:absolute bottom-10 md:bottom-4 left-1/2 transform -translate-x-1/2 z-20 w-full px-4">
       <div class="grid grid-cols-3 gap-8">
         <!-- Card 1 -->
-        <a href="" class="bg-[#0033ff] motion-preset-slide-up-lg motion-duration-2000 text-left flex px-6 py-6 items-center gap-4 border-2 border-[#FDD708] rounded-lg hover:transform hover:scale-105 transition-all">
+        <a href="" class="bg-[#0033ff] motion-preset-slide-left-lg motion-duration-2000 text-left flex px-6 py-6 items-center gap-4 border-2 border-[#FDD708] rounded-lg hover:transform hover:scale-105 transition-all">
           <div class="flex justify-end items-center">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="96" height="96" fill="rgba(255,255,255,1)">
               <path d="M12 22C6.47715 22 2 17.5228 2 12 2 6.47715 6.47715 2 12 2 17.5228 2 22 6.47715 22 12 22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12 20 7.58172 16.4183 4 12 4 7.58172 4 4 7.58172 4 12 4 16.4183 7.58172 20 12 20ZM13 10.5V15H14V17H10V15H11V12.5H10V10.5H13ZM13.5 8C13.5 8.82843 12.8284 9.5 12 9.5 11.1716 9.5 10.5 8.82843 10.5 8 10.5 7.17157 11.1716 6.5 12 6.5 12.8284 6.5 13.5 7.17157 13.5 8Z"></path>
@@ -40,7 +40,7 @@
           </div>
         </a>
         <!-- Card 2 -->
-        <a href="" class="bg-[#0033ff] motion-preset-slide-up-lg motion-duration-2000 text-left flex px-6 py-6 items-center gap-4 border-2 border-[#FDD708] rounded-lg hover:transform hover:scale-105 transition-all">
+        <a href="" class="bg-[#0033ff] motion-preset-slide-left-lg motion-duration-2000 text-left flex px-6 py-6 items-center gap-4 border-2 border-[#FDD708] rounded-lg hover:transform hover:scale-105 transition-all">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="96" height="96" fill="rgba(255,255,255,1)">
             <path d="M12 0.585693L18 6.58569V9H22V19H23V21H1V19H2V9H6V6.58569L12 0.585693ZM18 19H20V11H18V19ZM6 11H4V19H6V11ZM8 7.41412V18.9999H11V12H13V18.9999H16V7.41412L12 3.41412L8 7.41412Z"></path>
           </svg>
@@ -52,7 +52,7 @@
           </div>
         </a>
         <!-- Card 3 -->
-        <a href="" class="bg-[#0033ff] motion-preset-slide-up-lg motion-duration-2000 text-left flex px-6 py-6 items-center gap-4 border-2 border-[#FDD708] rounded-lg hover:transform hover:scale-105 transition-all">
+        <a href="" class="bg-[#0033ff] motion-preset-slide-left-lg motion-duration-2000 text-left flex px-6 py-6 items-center gap-4 border-2 border-[#FDD708] rounded-lg hover:transform hover:scale-105 transition-all">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="96" height="96" fill="rgba(255,255,255,1)">
             <path d="M4 11.3333L0 9L12 2L24 9V17.5H22V10.1667L20 11.3333V18.0113L19.7774 18.2864C17.9457 20.5499 15.1418 22 12 22C8.85817 22 6.05429 20.5499 4.22263 18.2864L4 18.0113V11.3333ZM6 12.5V17.2917C7.46721 18.954 9.61112 20 12 20C14.3889 20 16.5328 18.954 18 17.2917V12.5L12 16L6 12.5ZM3.96927 9L12 13.6846L20.0307 9L12 4.31541L3.96927 9Z"></path>
           </svg>
@@ -61,6 +61,160 @@
             <div class="text-[#FFFFFF] text-[10px]">View our academics programs and college courses.</div>
           </div>
         </a>
+      </div>
+    </div>
+  </div>
+  {% comment %}BODY{% endcomment %}
+  <div>
+    <div class="py-20 text-center">CURRICULAR OFFERINGS CHED COURSES</div>
+
+    <div class="w-full h-[500px] flex items-center justify-center gap-3 px-5 pt-10">
+      <div class="card flex-1 h-full cursor-pointer transition-all duration-500 transform hover:scale-100 hover:opacity-90 hover:shadow-xl hover:translate-y-[-10px] relative group">
+        <img src="{% static 'img/pics/ACT.jpg' %}" alt="" class="object-cover w-full h-full" />
+        <!-- Button that appears on image hover -->
+        <a href="#" class="absolute bottom-5 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-blue-500 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">Discover More</a>
+        <p class="absolute bottom-24 left-1/2 transform -translate-x-1/2 px-4 py-2 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">BSIT</p>
+        <p class="absolute bottom-32 left-1/2 transform -translate-x-1/2 px-4 py-2 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">Four Year Degree Course</p>
+      </div>
+
+      <div class="card flex-1 h-full cursor-pointer transition-all duration-500 transform hover:scale-100 hover:opacity-90 hover:shadow-xl hover:translate-y-[-10px] relative group">
+        <img src="{% static 'img/pics/ACT.jpg' %}" alt="" class="object-cover w-full h-full" />
+        <!-- Button that appears on image hover -->
+        <a href="#" class="absolute bottom-5 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-blue-500 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">Click Me</a>
+      </div>
+
+      <div class="card flex-1 h-full cursor-pointer transition-all duration-500 transform hover:scale-100 hover:opacity-90 hover:shadow-xl hover:translate-y-[-10px] relative group">
+        <img src="{% static 'img/pics/ACT.jpg' %}" alt="" class="object-cover w-full h-full" />
+        <!-- Button that appears on image hover -->
+        <a href="#" class="absolute bottom-5 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-blue-500 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">Click Me</a>
+      </div>
+
+      <div class="card flex-1 h-full cursor-pointer transition-all duration-500 transform hover:scale-100 hover:opacity-90 hover:shadow-xl hover:translate-y-[-10px] relative group">
+        <img src="{% static 'img/pics/ACT.jpg' %}" alt="" class="object-cover w-full h-full" />
+        <!-- Button that appears on image hover -->
+        <a href="#" class="absolute bottom-5 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-blue-500 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">Click Me</a>
+      </div>
+    </div>
+
+    <div class="w-full h-full grid grid-cols-4 gap-3 px-10 pt-10">
+      <div class="card flex-1 h-full cursor-pointer transition-all duration-500 transform hover:scale-100 hover:opacity-90 hover:shadow-xl hover:translate-y-[-10px] relative group">
+        <img src="{% static 'img/pics/ACT.jpg' %}" alt="" class="object-cover w-full h-full" />
+        <!-- Button that appears on image hover -->
+        <a href="#" class="absolute bottom-5 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-blue-500 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">Click Me</a>
+      </div>
+
+      <div class="card flex-1 h-full cursor-pointer transition-all duration-500 transform hover:scale-100 hover:opacity-90 hover:shadow-xl hover:translate-y-[-10px] relative group">
+        <img src="{% static 'img/pics/ACT.jpg' %}" alt="" class="object-cover w-full h-full" />
+        <!-- Button that appears on image hover -->
+        <a href="#" class="absolute bottom-5 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-blue-500 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">Click Me</a>
+      </div>
+
+      <div class="card flex-1 h-full cursor-pointer transition-all duration-500 transform hover:scale-100 hover:opacity-90 hover:shadow-xl hover:translate-y-[-10px] relative group">
+        <img src="{% static 'img/pics/ACT.jpg' %}" alt="" class="object-cover w-full h-full" />
+        <!-- Button that appears on image hover -->
+        <a href="#" class="absolute bottom-5 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-blue-500 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">Click Me</a>
+      </div>
+
+      <div class="card flex-1 h-full cursor-pointer transition-all duration-500 transform hover:scale-100 hover:opacity-90 hover:shadow-xl hover:translate-y-[-10px] relative group">
+        <img src="{% static 'img/pics/ACT.jpg' %}" alt="" class="object-cover w-full h-full" />
+        <!-- Button that appears on image hover -->
+        <a href="#" class="absolute bottom-5 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-blue-500 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">Click Me</a>
+      </div>
+    </div>
+
+    <div class="text-center">
+      TESDA SHORT TERM COURSES & <br /> COURSES SOON TO BE OFFERED
+    </div>
+
+    <div class="flex items-center justify-center gap-1">
+      <div class="w-[50%] h-full grid grid-cols-1 gap-2 px-10 pt-10">
+        <div class="card flex-1 h-full cursor-pointer transition-all duration-500 transform hover:scale-100 hover:opacity-90 hover:shadow-xl hover:translate-y-[-10px] relative group">
+          <img src="{% static 'img/pics/ACT.jpg' %}" alt="" class="object-cover w-full h-full" />
+          <!-- Button that appears on image hover -->
+          <a href="#" class="absolute bottom-5 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-blue-500 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">Click Me</a>
+        </div>
+
+        <div class="card flex-1 h-full cursor-pointer transition-all duration-500 transform hover:scale-100 hover:opacity-90 hover:shadow-xl hover:translate-y-[-10px] relative group">
+          <img src="{% static 'img/pics/ACT.jpg' %}" alt="" class="object-cover w-full h-full" />
+          <!-- Button that appears on image hover -->
+          <a href="#" class="absolute bottom-5 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-blue-500 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">Click Me</a>
+        </div>
+
+        <div class="card flex-1 h-full cursor-pointer transition-all duration-500 transform hover:scale-100 hover:opacity-90 hover:shadow-xl hover:translate-y-[-10px] relative group">
+          <img src="{% static 'img/pics/ACT.jpg' %}" alt="" class="object-cover w-full h-full" />
+          <!-- Button that appears on image hover -->
+          <a href="#" class="absolute bottom-5 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-blue-500 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">Click Me</a>
+        </div>
+
+        <div class="card flex-1 h-full cursor-pointer transition-all duration-500 transform hover:scale-100 hover:opacity-90 hover:shadow-xl hover:translate-y-[-10px] relative group">
+          <img src="{% static 'img/pics/ACT.jpg' %}" alt="" class="object-cover w-full h-full" />
+          <!-- Button that appears on image hover -->
+          <a href="#" class="absolute bottom-5 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-blue-500 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">Click Me</a>
+        </div>
+      </div>
+
+      <div class="w-[50%] h-full grid grid-cols-1 gap-2 px-10 pt-10">
+        <div class="card flex-1 h-full cursor-pointer transition-all duration-500 transform hover:scale-100 hover:opacity-90 hover:shadow-xl hover:translate-y-[-10px] relative group">
+          <img src="{% static 'img/pics/ACT.jpg' %}" alt="" class="object-cover w-full h-full" />
+          <!-- Button that appears on image hover -->
+          <a href="#" class="absolute bottom-5 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-blue-500 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">Click Me</a>
+        </div>
+
+        <div class="card flex-1 h-full cursor-pointer transition-all duration-500 transform hover:scale-100 hover:opacity-90 hover:shadow-xl hover:translate-y-[-10px] relative group">
+          <img src="{% static 'img/pics/ACT.jpg' %}" alt="" class="object-cover w-full h-full" />
+          <!-- Button that appears on image hover -->
+          <a href="#" class="absolute bottom-5 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-blue-500 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">Click Me</a>
+        </div>
+
+        <div class="card flex-1 h-full cursor-pointer transition-all duration-500 transform hover:scale-100 hover:opacity-90 hover:shadow-xl hover:translate-y-[-10px] relative group">
+          <img src="{% static 'img/pics/ACT.jpg' %}" alt="" class="object-cover w-full h-full" />
+          <!-- Button that appears on image hover -->
+          <a href="#" class="absolute bottom-5 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-blue-500 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">Click Me</a>
+        </div>
+      </div>
+
+      <div class="w-[50%] h-full grid grid-cols-1 gap-2 px-10 pt-10">
+        <div class="card flex-1 h-full cursor-pointer transition-all duration-500 transform hover:scale-100 hover:opacity-90 hover:shadow-xl hover:translate-y-[-10px] relative group">
+          <img src="{% static 'img/pics/ACT.jpg' %}" alt="" class="object-cover w-full h-full" />
+          <!-- Button that appears on image hover -->
+          <a href="#" class="absolute bottom-5 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-blue-500 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">Click Me</a>
+        </div>
+
+        <div class="card flex-1 h-full cursor-pointer transition-all duration-500 transform hover:scale-100 hover:opacity-90 hover:shadow-xl hover:translate-y-[-10px] relative group">
+          <img src="{% static 'img/pics/ACT.jpg' %}" alt="" class="object-cover w-full h-full" />
+          <!-- Button that appears on image hover -->
+          <a href="#" class="absolute bottom-5 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-blue-500 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">Click Me</a>
+        </div>
+
+        <div class="card flex-1 h-full cursor-pointer transition-all duration-500 transform hover:scale-100 hover:opacity-90 hover:shadow-xl hover:translate-y-[-10px] relative group">
+          <img src="{% static 'img/pics/ACT.jpg' %}" alt="" class="object-cover w-full h-full" />
+          <!-- Button that appears on image hover -->
+          <a href="#" class="absolute bottom-5 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-blue-500 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">Click Me</a>
+        </div>
+
+        <div class="card flex-1 h-full cursor-pointer transition-all duration-500 transform hover:scale-100 hover:opacity-90 hover:shadow-xl hover:translate-y-[-10px] relative group">
+          <img src="{% static 'img/pics/ACT.jpg' %}" alt="" class="object-cover w-full h-full" />
+          <!-- Button that appears on image hover -->
+          <a href="#" class="absolute bottom-5 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-blue-500 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">Click Me</a>
+        </div>
+      </div>
+    </div>
+
+    <div>DEEPED CURRICULUM</div>
+
+    <div class="w-full h-[500px] flex items-center justify-center gap-3 px-5 pt-10">
+      <div class="card flex-1 h-full cursor-pointer transition-all duration-500 transform hover:scale-100 hover:opacity-90 hover:shadow-xl hover:translate-y-[-10px] relative group">
+        <img src="{% static 'img/pics/ACT.jpg' %}" alt="" class="object-cover w-full h-full" />
+        <!-- Button that appears on image hover -->
+        <a href="#" class="absolute bottom-5 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-blue-500 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">Discover More</a>
+        <p class="absolute bottom-24 left-1/2 transform -translate-x-1/2 px-4 py-2 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">BSIT</p>
+        <p class="absolute bottom-32 left-1/2 transform -translate-x-1/2 px-4 py-2 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">Four Year Degree Course</p>
+      </div>
+
+      <div class="card flex-1 h-full cursor-pointer transition-all duration-500 transform hover:scale-100 hover:opacity-90 hover:shadow-xl hover:translate-y-[-10px] relative group">
+        <img src="{% static 'img/pics/ACT.jpg' %}" alt="" class="object-cover w-full h-full" />
+        <!-- Button that appears on image hover -->
+        <a href="#" class="absolute bottom-5 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-blue-500 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">Click Me</a>
       </div>
     </div>
   </div>
